@@ -1,4 +1,4 @@
-package striver_dsa_sheet;
+package arrays;
 
 import java.util.HashMap;
 
@@ -8,7 +8,7 @@ import java.util.HashMap;
  * You can return the answer in any order.
  */
 
-public class QuestionOne {
+public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         int[] output = new int[2];
         HashMap<Integer, Integer> hashMap = new HashMap<>();

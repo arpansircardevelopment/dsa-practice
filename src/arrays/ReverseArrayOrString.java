@@ -1,10 +1,10 @@
-package striver_dsa_sheet;
+package arrays;
 
 /**
  * Write a program to reverse an array or string
  */
 
-public class QuestionTwo {
+public class ReverseArrayOrString {
 
     public String reverseString(String string) {
         String newString = "";
