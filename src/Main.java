@@ -1,8 +1,9 @@
-import arrays.MissingNumber;
+import arrays.RemoveDuplicatesCyclicSort;
 
 public class Main {
     public static void main(String[] args) {
-        MissingNumber missingNumber = new MissingNumber();
-        missingNumber.sort(new int[]{9,6,4,2,3,5,7,0,1});
+        RemoveDuplicatesCyclicSort removeDuplicates = new RemoveDuplicatesCyclicSort();
+        int abc = removeDuplicates.findDuplicate(new int[]{3, 1, 3, 4, 2});
+        System.out.println(abc);
     }
 }
