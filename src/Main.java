@@ -1,11 +1,9 @@
-import arrays.FindDuplicatesInAnArray;
-
-import java.util.List;
+import arrays.SetMismatch;;import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        FindDuplicatesInAnArray duplicates = new FindDuplicatesInAnArray();
-        List<Integer> output = duplicates.findDuplicatesInArray(new int[]{4, 3, 2, 7, 8, 2, 3, 1});
-        System.out.println(output);
+        SetMismatch setMismatch = new SetMismatch();
+        int[] output = setMismatch.findTheSetMismatch(new int[]{1, 2, 2, 4});
+        System.out.println(Arrays.toString(output));
     }
 }
