@@ -1,9 +1,10 @@
 import arrays.FirstMissingPositive;
-import arrays.SetMismatch;;import java.util.Arrays;
+import arrays.SetMismatch;
+import arrays.SortAnArrayOfZerosAndOnes;;import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        FirstMissingPositive fmp = new FirstMissingPositive();
-        System.out.println(fmp.firstMissingPositive(new int[]{3, 4, -1, 1}));
+        SortAnArrayOfZerosAndOnes sort = new SortAnArrayOfZerosAndOnes();
+        sort.sort(new int[]{2, 0, 2, 1, 1, 0});
     }
 }
