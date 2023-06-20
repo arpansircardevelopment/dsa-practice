@@ -1,10 +1,9 @@
-import arrays.FirstMissingPositive;
-import arrays.SetMismatch;
-import arrays.SortAnArrayOfZerosAndOnes;;import java.util.Arrays;
+import arrays.MergeSort;
+import arrays.SortAnArrayOfZerosAndOnes;
 
 public class Main {
     public static void main(String[] args) {
-        SortAnArrayOfZerosAndOnes sort = new SortAnArrayOfZerosAndOnes();
-        sort.sort(new int[]{2, 0, 2, 1, 1, 0});
+        MergeSort sort = new MergeSort();
+        sort.merge(new int[]{1}, 1, new int[]{}, 0);
     }
 }
