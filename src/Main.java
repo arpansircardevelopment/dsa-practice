@@ -1,13 +1,11 @@
 import arrays.MergeIntervals;
+import arrays.SetMatrixZeroes;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        MergeIntervals mergeIntervals = new MergeIntervals();
-        int[][] result = mergeIntervals.merge(new int[][]{{1, 3}, {2, 6}, {8, 10}, {15, 18}});
-        for (int[] i : result) {
-            System.out.println(Arrays.toString(i));
-        }
+        SetMatrixZeroes zeroes = new SetMatrixZeroes();
+        zeroes.setZeroes(new int[][]{{1, 0, 1}, {1, 1, 1}, {1, 1, 1}});
     }
 }
