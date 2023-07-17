@@ -1,11 +1,14 @@
-import arrays.MergeIntervals;
-import arrays.SetMatrixZeroes;
+import arrays.PascalTriangle;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        SetMatrixZeroes zeroes = new SetMatrixZeroes();
-        zeroes.setZeroes(new int[][]{{1, 0, 1}, {1, 1, 1}, {1, 1, 1}});
+        PascalTriangle pascalTriangle = new PascalTriangle();
+        List<List<Integer>> result = pascalTriangle.completeTriangle(5);
+
+        for (List<Integer> i : result) {
+            System.out.println(i);
+        }
     }
 }
