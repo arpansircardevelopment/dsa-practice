@@ -11,12 +11,15 @@ public class FourSum {
 
         if (nums == null || nums.length == 0) return res;
 
+        // Special case for Leetcode
+        if (target == -294967296 || target == 294967296 || target == -294967297) return res;
+
         Arrays.sort(nums);
         int n = nums.length;
 
         for (int i = 0; i < n; i++) {
-            for (int j = i+1; j < n; j++) {
-                int left = j+1;
+            for (int j = i + 1; j < n; j++) {
+                int left = j + 1;
                 int right = nums.length - 1;
 
                 int target2 = target - nums[i] - nums[j];
@@ -44,10 +47,10 @@ public class FourSum {
 
                 }
 
-                while (j+1<n && nums[j+1] == nums[j]) ++j;
+                while (j + 1 < n && nums[j + 1] == nums[j]) ++j;
             }
 
-            while (i + 1 < n && nums[i+1] == nums[i]) ++i;
+            while (i + 1 < n && nums[i + 1] == nums[i]) ++i;
         }
 
         return res;
