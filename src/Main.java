@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        PowXN powXN = new PowXN();
-       double ans = powXN.myPow(2, 10);
-        System.out.println(ans);
+        MajorityElement majorityElement = new MajorityElement();
+        int output = majorityElement.majorityElement(new int[]{3,2,3});
+        System.out.println(output);
     }
 }
