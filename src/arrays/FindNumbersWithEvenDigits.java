@@ -4,6 +4,8 @@ public class FindNumbersWithEvenDigits {
     public int bruteForceApproach(int[] arr) {
         int countEvenNumbers = 0;
         for (int number : arr) {
+            number = Math.abs(number); // to handle negative test cases
+
             if (isEven(number)) {
                 countEvenNumbers++;
             }
@@ -25,6 +27,7 @@ public class FindNumbersWithEvenDigits {
     public int optimizedApproach(int[] arr) {
         int count = 0;
         for (int number : arr) {
+            number = Math.abs(number);  // to handle negative test cases
             int currentDigits = (int) Math.log10(number) + 1;
             if (currentDigits % 2 == 0) {
                 count++;
