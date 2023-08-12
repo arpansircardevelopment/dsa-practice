@@ -6,6 +6,10 @@ public class FloorOfANumber {
         int start = 0;
         int end = array.length - 1;
 
+        if (target < array[0]) {
+            return -1;
+        }
+
         while (start <= end) {
             int mid = start + (end - start) / 2;
             if (target < array[mid]) {
