@@ -1,11 +1,11 @@
-import algorithms.searching.binary.CeilingOfANumber;
-import algorithms.searching.binary.FloorOfANumber;
-import algorithms.searching.binary.SmallestLetterGreaterThanTarget;
+import algorithms.searching.binary.*;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        SmallestLetterGreaterThanTarget smallestLetterGreaterThanTarget = new SmallestLetterGreaterThanTarget();
-        char output = smallestLetterGreaterThanTarget.smallestLetter(new char[]{'c', 'f', 'j'}, 'd');
+        PeakIndexInMountainArray peak = new PeakIndexInMountainArray();
+        int output = peak.peakIndexInMountainArray(new int[]{0, 10, 5, 2});
         System.out.println(output);
     }
 }
