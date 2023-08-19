@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        CountRotations countRotations = new CountRotations();
-        System.out.println(countRotations.count(new int[]{4, 5, 6, 7, 0, 1, 2}));
+        SearchInARotatedArrayWithDuplicates duplicates = new SearchInARotatedArrayWithDuplicates();
+        boolean output = duplicates.search(new int[]{4, 5, 5, 5, 6, 7, 0, 1, 2, 3}, 2);
+        System.out.println(output);
     }
 }
