@@ -1,11 +1,13 @@
-import algorithms.searching.binary.*;
+import algorithms.searching.binary.SortedMatrix;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        SearchInARotatedArrayWithDuplicates duplicates = new SearchInARotatedArrayWithDuplicates();
-        boolean output = duplicates.search(new int[]{4, 5, 5, 5, 6, 7, 0, 1, 2, 3}, 2);
-        System.out.println(output);
+        int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+        SortedMatrix matrix = new SortedMatrix();
+        int[] answer = matrix.search(arr, 9);
+        System.out.println(Arrays.toString(answer));
     }
 }
