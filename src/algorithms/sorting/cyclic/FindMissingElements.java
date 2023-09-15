@@ -14,10 +14,13 @@ public class FindMissingElements {
     }
 
     private void sort(int[] array) {
-        for (int i = 0; i < array.length; i++) {
+        int i = 0;
+        while (i < array.length) {
             int correct = array[i];
             if (array[i] < array.length && array[i] != array[correct]) {
                 swap(array, i, correct);
+            } else {
+                i++;
             }
         }
     }

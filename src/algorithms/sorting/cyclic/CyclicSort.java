@@ -2,10 +2,13 @@ package algorithms.sorting.cyclic;
 
 public class CyclicSort {
     public int[] sort(int[] array) {
-        for (int i = 0; i < array.length; i++) {
+        int i = 0;
+        while (i < array.length) {
             int correctPosition = array[i] - 1;
             if (array[i] != array[correctPosition]) {
                 swap(array, i, correctPosition);
+            } else {
+                i++;
             }
         }
         return array;
