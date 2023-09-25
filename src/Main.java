@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        FindAllDuplicateNumbersInArray findDuplicateNumber = new FindAllDuplicateNumbersInArray();
-        List<Integer> output = findDuplicateNumber.findDuplicates(new int[]{2, 3, 2, 1, 4, 4, 6, 5});
-        System.out.println(output);
+        SetMismatch setMismatch = new SetMismatch();
+        int[] output = setMismatch.setMismatch(new int[]{1, 2, 2, 4});
+        System.out.println(Arrays.toString(output));
     }
 }
