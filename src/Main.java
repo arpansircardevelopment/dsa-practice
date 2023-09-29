@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        OneToN oneToN = new OneToN();
-        oneToN.iterate(10);
+        OneToNTo1 oneToNTo1 = new OneToNTo1();
+        oneToNTo1.iterate(10);
     }
 }
