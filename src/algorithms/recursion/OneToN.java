@@ -1,11 +1,12 @@
 package algorithms.recursion;
 
 public class OneToN {
-    public void iterate(int n, int current) {
-        System.out.println(current);
-        if (current == n) {
+    public void iterate(int n) {
+        if (n == 0) {
             return;
         }
-        iterate(n, current + 1);
+
+        iterate(n - 1);
+        System.out.println(n);
     }
 }

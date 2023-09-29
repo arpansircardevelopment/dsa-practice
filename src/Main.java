@@ -8,6 +8,6 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         OneToN oneToN = new OneToN();
-        oneToN.iterate(5, 1);
+        oneToN.iterate(10);
     }
 }
