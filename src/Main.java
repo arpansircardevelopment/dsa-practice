@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        OneToNTo1 oneToNTo1 = new OneToNTo1();
-        oneToNTo1.iterate(10);
+        Factorial factorial = new Factorial();
+        System.out.println(factorial.factorial(5));
     }
 }
