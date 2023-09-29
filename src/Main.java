@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        SumOfNNumbers sumOfNNumbers = new SumOfNNumbers();
-        System.out.println(sumOfNNumbers.iterate(5));
+       SumOfDigits sumOfDigits = new SumOfDigits();
+        System.out.println(sumOfDigits.sumOfDigits(532));
     }
 }
