@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Factorial factorial = new Factorial();
-        System.out.println(factorial.factorial(5));
+        SumOfNNumbers sumOfNNumbers = new SumOfNNumbers();
+        System.out.println(sumOfNNumbers.iterate(5));
     }
 }
