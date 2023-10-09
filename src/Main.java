@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        ProductOfDigits product = new ProductOfDigits();
-        System.out.println(product.productOfDigits(345));
+        CountZeroes countZeroes = new CountZeroes();
+        System.out.println(countZeroes.count(10000));
     }
 }
