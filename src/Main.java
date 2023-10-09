@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        CountZeroes countZeroes = new CountZeroes();
-        System.out.println(countZeroes.count(10000));
+        Steps steps = new Steps();
+        System.out.println(steps.numberOfSteps(14));
     }
 }
