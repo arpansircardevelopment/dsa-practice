@@ -6,8 +6,6 @@ public class FindAnElement {
     }
 
     private boolean helper(int[] array, int element, int position) {
-        System.out.println(position);
-
         if (position == array.length - 1) {
             return array[position] == element;
         }
