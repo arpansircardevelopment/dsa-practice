@@ -7,7 +7,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        FindAllPositionsOfAnElement element = new FindAllPositionsOfAnElement();
-        System.out.println(element.find(new int[]{3, 1, 2, 3, 3, 3, 6}, 3));
+        RecursiveRotatedBinarySearch binarySearch = new RecursiveRotatedBinarySearch();
+        int output = binarySearch.search(new int[]{5, 6, 1, 2, 3, 4}, 6);
+        System.out.println(output);
     }
 }
