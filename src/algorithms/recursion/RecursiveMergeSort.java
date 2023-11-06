@@ -2,7 +2,7 @@ package algorithms.recursion;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class RecursiveMergeSort {
 
     public int[] mergeSort(int[] arr) {
         if (arr.length == 1) {
