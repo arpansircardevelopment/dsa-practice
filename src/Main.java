@@ -1,12 +1,14 @@
-import algorithms.recursion.*;
+import algorithms.recursion.Subset;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Subsequence subsequence = new Subsequence();
-        ArrayList<String> returned = subsequence.subsequenceReturn("", "abc");
-        System.out.println(returned);
+        int[] arr = {1, 2, 3};
+        Subset subset = new Subset();
+        List<List<Integer>> output = subset.subset(arr);
+        for (List<Integer> list : output) {
+            System.out.println(list);
+        }
     }
 }
