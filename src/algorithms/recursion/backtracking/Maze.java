@@ -1,4 +1,4 @@
-package algorithms.recursion;
+package algorithms.recursion.backtracking;
 
 public class Maze {
     public int count(int r, int c) {

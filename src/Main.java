@@ -1,13 +1,9 @@
-import algorithms.recursion.Maze;
-import algorithms.recursion.Permutations;
-import algorithms.recursion.Subset;
-
-import java.util.ArrayList;
-import java.util.List;
+import algorithms.recursion.backtracking.Maze;
+import algorithms.recursion.backtracking.Path;
 
 public class Main {
     public static void main(String[] args) {
-        Maze maze = new Maze();
-        System.out.println(maze.count(3, 3));
+        Path path = new Path();
+        path.path("", 3, 3);
     }
 }
