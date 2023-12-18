@@ -1,20 +1,16 @@
-import algorithms.recursion.backtracking.AllPath;
-import algorithms.recursion.backtracking.Maze;
 import algorithms.recursion.backtracking.NQueens;
-import algorithms.recursion.backtracking.Path;
-
-import java.util.ArrayList;
+import ds.linkedlist.LL;
 
 public class Main {
-
-    static boolean[][] boardArray = {
-            {true, true, true},
-            {true, true, true},
-            {true, true, true}
-    };
-
     public static void main(String[] args) {
-        NQueens nQueens = new NQueens();
-        nQueens.driver(4);
+        LL list = new LL();
+        list.insertLast(5);
+        list.insertLast(7);
+        list.insertLast(10);
+        list.insertLast(17);
+        list.display();
+        System.out.println(list.deleteFirst());
+        list.insertLast(15);
+        list.display();
     }
 }
