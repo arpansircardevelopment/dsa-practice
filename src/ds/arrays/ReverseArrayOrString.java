@@ -1,4 +1,4 @@
-package arrays;
+package ds.arrays;
 
 /**
  * Write a program to reverse an array or string

@@ -1,4 +1,4 @@
-package arrays;
+package ds.arrays;
 
 /**
  * Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that

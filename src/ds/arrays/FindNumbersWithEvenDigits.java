@@ -1,4 +1,4 @@
-package arrays;
+package ds.arrays;
 
 public class FindNumbersWithEvenDigits {
     public int bruteForceApproach(int[] arr) {

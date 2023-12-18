@@ -1,4 +1,4 @@
-package arrays;
+package ds.arrays;
 
 public class RemoveDuplicatesCyclicSort {
     public int findDuplicate(int[] nums) {

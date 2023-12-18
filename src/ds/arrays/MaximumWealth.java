@@ -1,4 +1,4 @@
-package arrays;
+package ds.arrays;
 
 public class MaximumWealth {
     public int maxWealth(int[][] arr) {

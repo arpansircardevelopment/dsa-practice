@@ -1,10 +1,10 @@
-package arrays;
+package ds.arrays;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FindAllNumbersMissingInAnArray {
-    public List<Integer> findDisappearedNumbers(int[] nums) {
+public class FindDuplicatesInAnArray {
+    public List<Integer> findDuplicatesInArray(int[] nums) {
         int i = 0;
         while (i < nums.length) {
             int correct = nums[i] - 1;
@@ -15,14 +15,14 @@ public class FindAllNumbersMissingInAnArray {
             }
         }
 
-        List<Integer> missingNumbers = new ArrayList<>();
-        for (int j = 0; j < nums.length; j++) {
-            if (nums[j] != (j + 1)) {
-                missingNumbers.add(j + 1);
+        List<Integer> outputArrayList = new ArrayList<>();
+        int j = 0;
+        for (i = 0; i < nums.length; i++) {
+            if (nums[i] != i + 1) {
+                outputArrayList.add(nums[i]);
             }
         }
-
-        return missingNumbers;
+        return outputArrayList;
     }
 
     public void swap(int[] array, int first, int second) {

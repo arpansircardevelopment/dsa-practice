@@ -1,4 +1,4 @@
-package arrays;
+package ds.arrays;
 
 public class PowXN {
     public double myPow(double x, int n) {

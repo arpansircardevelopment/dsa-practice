@@ -1,4 +1,4 @@
-package arrays;
+package ds.arrays;
 
 public class MaxSubArray {
     public int maxSubArray(int[] nums) {

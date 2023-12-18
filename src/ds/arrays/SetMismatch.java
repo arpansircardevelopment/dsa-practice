@@ -1,20 +1,23 @@
-package arrays;
+package ds.arrays;
 
-import java.util.Arrays;
-
-public class CyclicSort {
-    public void sort(int[] nums) {
+public class SetMismatch {
+    public int[] findTheSetMismatch(int[] nums) {
         int i = 0;
         while (i < nums.length) {
             int correct = nums[i] - 1;
-            if (correct != i) {
+            if (nums[correct] != nums[i]) {
                 swap(nums, i, correct);
             } else {
                 i++;
             }
         }
 
-        System.out.println(Arrays.toString(nums));
+        for (i = 0; i < nums.length; i++) {
+            if (nums[i] != i + 1) {
+                return new int[]{nums[i], i + 1};
+            }
+        }
+        return new int[]{};
     }
 
     public void swap(int[] array, int first, int second) {

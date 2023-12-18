@@ -1,4 +1,4 @@
-package arrays;
+package ds.arrays;
 
 public class Search2DArray {
 

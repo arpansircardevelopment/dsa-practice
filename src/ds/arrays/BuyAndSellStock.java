@@ -1,4 +1,4 @@
-package arrays;
+package ds.arrays;
 
 public class BuyAndSellStock {
     public int maxProfit(int[] prices) {
