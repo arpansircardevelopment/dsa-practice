@@ -12,5 +12,7 @@ public class Main {
         System.out.println(list.deleteFirst());
         list.insertLast(15);
         list.display();
+        System.out.println(list.deleteLast());
+        list.display();
     }
 }
