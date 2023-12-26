@@ -11,5 +11,6 @@ public class Main {
         list.display();
         System.out.println(list.delete(2));
         list.display();
+        System.out.println("Element found at " + list.find(17));
     }
 }

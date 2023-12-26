@@ -104,6 +104,19 @@ public class LL {
         return val;
     }
 
+    public int find(int value) {
+        Node temp = head;
+        int location = 0;
+        while (temp != null) {
+            if (temp.value == value) {
+                return location;
+            }
+            location++;
+            temp = temp.next;
+        }
+        return -1;
+    }
+
     public void display() {
         Node temp = head;
 
