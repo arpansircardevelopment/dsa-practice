@@ -1,13 +1,13 @@
 package ds.linkedlist;
 
-public class LL {
+public class SinglyLinkedList {
 
     private Node head;
     private Node tail;
 
     private int size;
 
-    public LL() {
+    public SinglyLinkedList() {
     }
 
     public void insertFirst(int val) {
