@@ -4,8 +4,11 @@ public class Main {
     public static void main(String[] args) {
         DoublyLinkedList dll = new DoublyLinkedList();
         dll.insertFirst(10);
+        dll.insertFirst(20);
+        dll.insertFirst(30);
+        dll.insertFirst(40);
         dll.display();
-        dll.deleteFirst();
-        dll.deleteFirst();
+        dll.deleteLast();
+        dll.deleteLast();
     }
 }

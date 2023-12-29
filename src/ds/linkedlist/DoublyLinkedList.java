@@ -74,6 +74,27 @@ public class DoublyLinkedList {
         System.out.println(val + " deleted");
     }
 
+    public void deleteLast() {
+        if (head == null) {
+            System.out.println("nothing to delete");
+            return;
+        }
+
+        if (head.next == null) {
+            deleteFirst();
+            return;
+        }
+
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+
+        int value = temp.value;
+        temp.prev.next = null;
+        System.out.println(value + " deleted");
+    }
+
     public void display() {
         Node temp = head;
         Node last = null;
