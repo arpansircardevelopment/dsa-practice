@@ -95,6 +95,39 @@ public class DoublyLinkedList {
         System.out.println(value + " deleted");
     }
 
+    public void delete(int index) {
+        if (index == 0) {
+            deleteFirst();
+            return;
+        }
+
+        Node temp = get(index);
+        if (temp == null) {
+            System.out.println("Index does not exist");
+            return;
+        }
+
+        if (temp.next == null) {
+            deleteLast();
+            return;
+        }
+
+        temp.prev.next = temp.next;
+        temp.next.prev = temp.prev;
+        System.out.println(temp.value + " deleted");
+    }
+
+    public Node get(int index) {
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+            if (node.next == null) {
+                return null;
+            }
+            node = node.next;
+        }
+        return node;
+    }
+
     public void display() {
         Node temp = head;
         Node last = null;

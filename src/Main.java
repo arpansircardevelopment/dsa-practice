@@ -3,12 +3,11 @@ import ds.linkedlist.DoublyLinkedList;
 public class Main {
     public static void main(String[] args) {
         DoublyLinkedList dll = new DoublyLinkedList();
-        dll.insertFirst(10);
-        dll.insertFirst(20);
-        dll.insertFirst(30);
-        dll.insertFirst(40);
+        dll.insertLast(10);
+        dll.insertLast(20);
+        dll.insertLast(30);
+        dll.insertLast(40);
+        dll.delete(2);
         dll.display();
-        dll.deleteLast();
-        dll.deleteLast();
     }
 }
