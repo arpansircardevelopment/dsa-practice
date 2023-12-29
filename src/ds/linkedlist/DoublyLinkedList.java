@@ -63,6 +63,17 @@ public class DoublyLinkedList {
         return null;
     }
 
+    public void deleteFirst() {
+        if (head == null) {
+            System.out.println("nothing to delete");
+            return;
+        }
+
+        int val = head.value;
+        head = head.next;
+        System.out.println(val + " deleted");
+    }
+
     public void display() {
         Node temp = head;
         Node last = null;
