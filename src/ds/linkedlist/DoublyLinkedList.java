@@ -33,6 +33,36 @@ public class DoublyLinkedList {
         node.prev = last;
     }
 
+    public void insert(int after, int value) {
+        Node p = find(after);
+
+        if (p == null) {
+            System.out.println("does not exist");
+            return;
+        }
+
+        Node node = new Node(value);
+        node.next = p.next;
+        p.next = node;
+        node.prev = p;
+        if (node.next != null) {
+            node.next.prev = node;
+        }
+    }
+
+    public Node find(int value) {
+        Node temp = head;
+        int location = 0;
+        while (temp != null) {
+            if (temp.value == value) {
+                return temp;
+            }
+            location++;
+            temp = temp.next;
+        }
+        return null;
+    }
+
     public void display() {
         Node temp = head;
         Node last = null;
