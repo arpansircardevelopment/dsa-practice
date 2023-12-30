@@ -59,6 +59,71 @@ public class CircularLinkedList {
         temp.next = newNode;
     }
 
+    public void deleteFirst() {
+        if (head == null) {
+            System.out.println("Empty Linked List");
+            return;
+        }
+
+        if (head.next == head) {
+            head = null;
+            tail = null;
+            return;
+        }
+
+        head = head.next;
+        tail.next = head;
+    }
+
+    public void deleteLast() {
+        if (head == null) {
+            System.out.println("Empty Linked List");
+            return;
+        }
+
+        if (head.next == head) {
+            head = null;
+            tail = null;
+            return;
+        }
+
+        Node temp = head;
+        while (temp.next != tail) {
+            temp = temp.next;
+        }
+
+        tail = temp;
+        tail.next = head;
+    }
+
+    public void deleteAtIndex(int index) {
+        if (head == null) {
+            System.out.println("Empty Linked List");
+            return;
+        }
+
+        if (index == 0) {
+            deleteFirst();
+            return;
+        }
+
+        int count = 0;
+        Node temp = head;
+        while (temp != tail && count < index - 1) {
+            count++;
+            temp = temp.next;
+        }
+
+        if (count < index - 1) {
+            System.out.println("Index does not exist.");
+            return;
+        }
+
+        if (temp.next != null) {
+            temp.next = temp.next.next;
+        }
+    }
+
     public void display() {
         if (head == null) {
             System.out.println("Empty Linked List");

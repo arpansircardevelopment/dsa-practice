@@ -8,8 +8,9 @@ public class Main {
         CircularLinkedList circularLinkedList = new CircularLinkedList();
         circularLinkedList.insertAtEnd(10);
         circularLinkedList.insertAtEnd(20);
-//        circularLinkedList.insertAtEnd(30);
-        circularLinkedList.insertAtIndex(40, 2);
+        circularLinkedList.insertAtEnd(30);
+        circularLinkedList.display();
+        circularLinkedList.deleteAtIndex(1);
         circularLinkedList.display();
     }
 }
