@@ -1,16 +1,17 @@
 import ds.linkedlist.CircularLinkedList;
 import ds.linkedlist.DoublyLinkedList;
+import ds.linkedlist.SinglyLinkedList;
 
 import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        CircularLinkedList circularLinkedList = new CircularLinkedList();
-        circularLinkedList.insertAtEnd(10);
-        circularLinkedList.insertAtEnd(20);
-        circularLinkedList.insertAtEnd(30);
-        circularLinkedList.display();
-        circularLinkedList.deleteAtIndex(1);
-        circularLinkedList.display();
+        SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+        singlyLinkedList.insert(10, 0);
+        singlyLinkedList.insert(20, 1);
+        singlyLinkedList.insert(30, 2);
+        singlyLinkedList.insertRec(40, 3);
+//        singlyLinkedList.insertRec(50, 4);
+        singlyLinkedList.display();
     }
 }
