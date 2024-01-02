@@ -119,6 +119,22 @@ public class SinglyLinkedList {
         return val;
     }
 
+    public void removeDuplicates() {
+        Node temp = head;
+
+        while (temp.next != null) {
+            if (temp.value == temp.next.value) {
+                temp.next = temp.next.next;
+                size--;
+            } else {
+                temp = temp.next;
+            }
+        }
+
+        tail = temp;
+        tail.next = null;
+    }
+
     public int find(int value) {
         Node temp = head;
         int location = 0;

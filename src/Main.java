@@ -7,11 +7,12 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
-        singlyLinkedList.insert(10, 0);
-        singlyLinkedList.insert(20, 1);
-        singlyLinkedList.insert(30, 2);
-        singlyLinkedList.insertRec(40, 3);
-//        singlyLinkedList.insertRec(50, 4);
+        singlyLinkedList.insertLast(1);
+        singlyLinkedList.insertLast(1);
+        singlyLinkedList.insertLast(2);
+        singlyLinkedList.insertLast(3);
+        singlyLinkedList.insertLast(3);
+        singlyLinkedList.removeDuplicates();
         singlyLinkedList.display();
     }
 }
