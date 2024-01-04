@@ -6,13 +6,12 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
-        singlyLinkedList.insertLast(1);
-        singlyLinkedList.insertLast(1);
-        singlyLinkedList.insertLast(2);
-        singlyLinkedList.insertLast(3);
-        singlyLinkedList.insertLast(3);
-        singlyLinkedList.removeDuplicates();
-        singlyLinkedList.display();
+        SinglyLinkedList first = new SinglyLinkedList();
+        SinglyLinkedList second = new SinglyLinkedList();
+
+        second.insertLast(0);
+
+        SinglyLinkedList answer = SinglyLinkedList.merge(first, second);
+        answer.display();
     }
 }

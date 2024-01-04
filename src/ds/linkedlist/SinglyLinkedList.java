@@ -135,6 +135,34 @@ public class SinglyLinkedList {
         tail.next = null;
     }
 
+    public static SinglyLinkedList merge(SinglyLinkedList first, SinglyLinkedList second) {
+        Node f = first.head;
+        Node s = second.head;
+
+        SinglyLinkedList ans = new SinglyLinkedList();
+        while (f != null && s != null) {
+            if (f.value < s.value) {
+                ans.insertLast(f.value);
+                f = f.next;
+            } else {
+                ans.insertLast(s.value);
+                s = s.next;
+            }
+        }
+
+        while (f != null) {
+            ans.insertLast(f.value);
+            f = f.next;
+        }
+
+        while (s != null) {
+            ans.insertLast(s.value);
+            s = s.next;
+        }
+
+        return ans;
+    }
+
     public int find(int value) {
         Node temp = head;
         int location = 0;
