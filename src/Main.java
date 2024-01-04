@@ -1,17 +1,17 @@
-import ds.linkedlist.CircularLinkedList;
-import ds.linkedlist.DoublyLinkedList;
-import ds.linkedlist.SinglyLinkedList;
+import ds.linkedlist.LinkedListCycle;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        SinglyLinkedList first = new SinglyLinkedList();
-        SinglyLinkedList second = new SinglyLinkedList();
+        ArrayList<Integer> integerArray = new ArrayList<>();
+        integerArray.add(10);
+        integerArray.add(20);
+        integerArray.add(30);
+        integerArray.add(40);
+        integerArray.add(50);
 
-        second.insertLast(0);
-
-        SinglyLinkedList answer = SinglyLinkedList.merge(first, second);
-        answer.display();
+        boolean hasCycle = new LinkedListCycle().driver(integerArray);
+        System.out.println("Has Cycle: " + hasCycle);
     }
 }

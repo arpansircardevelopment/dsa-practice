@@ -10,6 +10,10 @@ public class SinglyLinkedList {
     public SinglyLinkedList() {
     }
 
+    public int getSize() {
+        return size;
+    }
+
     public void insertFirst(int val) {
         Node node = new Node(val);
         node.next = head;
@@ -50,6 +54,18 @@ public class SinglyLinkedList {
         }
 
         Node node = new Node(val);
+        tail.next = node;
+        tail = node;
+        size++;
+    }
+
+    public void insertLast(Node node) {
+        if (head == null) {
+            head = node;
+            tail = node;
+            return;
+        }
+
         tail.next = node;
         tail = node;
         size++;
@@ -187,9 +203,9 @@ public class SinglyLinkedList {
         System.out.println("END");
     }
 
-    private static class Node {
-        private int value;
-        private Node next;
+    public static class Node {
+        private final int value;
+        public Node next;
 
         public Node(int value) {
             this.value = value;
