@@ -11,7 +11,8 @@ public class Main {
         integerArray.add(40);
         integerArray.add(50);
 
-        boolean hasCycle = new LinkedListCycle().driver(integerArray);
+        LinkedListCycle linkedListCycle = new LinkedListCycle();
+        boolean hasCycle = linkedListCycle.driver(integerArray);
         System.out.println("Has Cycle: " + hasCycle);
     }
 }
