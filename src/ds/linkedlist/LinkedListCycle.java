@@ -94,6 +94,18 @@ public class LinkedListCycle {
         return ans;
     }
 
+    public SinglyLinkedList.Node lengthOfLinkedList(SinglyLinkedList.Node head) {
+        SinglyLinkedList.Node slow = head;
+        SinglyLinkedList.Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return slow;
+    }
+
     public boolean driver(ArrayList<Integer> elements) {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
 
