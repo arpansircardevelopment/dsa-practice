@@ -207,6 +207,24 @@ public class SinglyLinkedList {
         System.out.println("END");
     }
 
+    public void reverseLinkedListIterative() {
+        if (head == null || head.next == null) {
+            return;
+        }
+
+        Node prev = null;
+        Node next;
+        Node current = head;
+
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        head = prev;
+    }
+
     public static class Node {
         public int value;
         public Node next;
