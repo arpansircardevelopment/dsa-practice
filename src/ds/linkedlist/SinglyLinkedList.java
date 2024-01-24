@@ -14,6 +14,10 @@ public class SinglyLinkedList {
         return size;
     }
 
+    public Node getHead() {
+        return head;
+    }
+
     public void insertFirst(int val) {
         Node node = new Node(val);
         node.next = head;
@@ -204,8 +208,12 @@ public class SinglyLinkedList {
     }
 
     public static class Node {
-        private final int value;
+        public int value;
         public Node next;
+
+        public Node() {
+
+        }
 
         public Node(int value) {
             this.value = value;

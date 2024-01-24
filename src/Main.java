@@ -1,18 +1,16 @@
-import ds.linkedlist.LinkedListCycle;
-
-import java.util.ArrayList;
+import ds.linkedlist.LinkedListMergeSort;
+import ds.linkedlist.SinglyLinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> integerArray = new ArrayList<>();
-        integerArray.add(10);
-        integerArray.add(20);
-        integerArray.add(30);
-        integerArray.add(40);
-        integerArray.add(50);
+        SinglyLinkedList list = new SinglyLinkedList();
+        for (int i = 50; i >= 0; i = i - 10) {
+            list.insertLast(i);
+        }
 
-        LinkedListCycle linkedListCycle = new LinkedListCycle();
-        boolean hasCycle = linkedListCycle.driver(integerArray);
-        System.out.println("Has Cycle: " + hasCycle);
+        list.display();
+        LinkedListMergeSort sorting = new LinkedListMergeSort();
+        sorting.mergeSort(list.getHead());
+        list.display();
     }
 }
