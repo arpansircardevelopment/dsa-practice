@@ -225,6 +225,22 @@ public class SinglyLinkedList {
         head = prev;
     }
 
+    public void reverseLinkedListRecursive() {
+        head = reverseLLRecursive(head);
+    }
+
+    private Node reverseLLRecursive(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        Node newHead = reverseLLRecursive(head.next);
+        Node next = head.next;
+        next.next = head;
+        head.next = null;
+        return newHead;
+    }
+
     public static class Node {
         public int value;
         public Node next;

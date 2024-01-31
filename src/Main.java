@@ -9,7 +9,7 @@ public class Main {
         }
 
         list.display();
-        list.reverseLinkedListIterative();
+        list.reverseLinkedListRecursive();
         list.display();
     }
 }
