@@ -317,6 +317,34 @@ public class SinglyLinkedList {
         return head == null || headSecond == null;
     }
 
+    public void reorderListDriver() {
+        reorderList(head);
+    }
+
+    public void reorderList(Node head) {
+        if (head == null || head.next == null) {
+            return;
+        }
+
+        Node mid = middleNode(head);
+        Node hs = reverseLLRecursive(mid);
+        Node hf = head;
+
+        while (hf != null && hs != null) {
+            Node temp = hf.next;
+            hf.next = hs;
+            hf = temp;
+
+            temp = hs.next;
+            hs.next = hf;
+            hs = temp;
+        }
+
+        if (hf != null) {
+            hf.next = null;
+        }
+    }
+
     public static class Node {
         public int value;
         public Node next;
