@@ -285,6 +285,38 @@ public class SinglyLinkedList {
         return head;
     }
 
+    private Node middleNode(Node head) {
+        Node s = head;
+        Node f = head;
+
+        while (f != null && f.next != null) {
+            s = s.next;
+            f = f.next.next;
+        }
+        return s;
+    }
+
+    public boolean isPalindromeDriver() {
+        return isPalindrome(head);
+    }
+
+    private boolean isPalindrome(Node head) {
+        Node mid = middleNode(head);
+        Node headSecond = reverseLLRecursive(mid);
+        Node reReverseHead = headSecond;
+
+        while (head != null && headSecond != null) {
+            if (head.value != headSecond.value) {
+                break;
+            }
+            head = head.next;
+            headSecond = headSecond.next;
+        }
+
+        reverseLLRecursive(reReverseHead);
+        return head == null || headSecond == null;
+    }
+
     public static class Node {
         public int value;
         public Node next;
